@@ -23,6 +23,7 @@ def bac_thang(a):
 
 def main():
 <<<<<<< HEAD
+<<<<<<< HEAD
     a = matrix(3,4)
     r = rank_matran(a)
     b = bac_thang(a)
@@ -32,10 +33,15 @@ def main():
     print("Mình sẽ test file này cho các bạn xem")
     print("Vui là chính vì tau đã sửa file")
 =======
+=======
+>>>>>>> parent of 8321e59... final code
     b = matrix(4,5)
     rank_matran(b)
     bac_thang(b)
 
+<<<<<<< HEAD
+>>>>>>> parent of 8321e59... final code
+=======
 >>>>>>> parent of 8321e59... final code
 
 if __name__ == '__main__':
