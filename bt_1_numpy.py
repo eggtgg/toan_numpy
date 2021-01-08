@@ -2,30 +2,33 @@ import numpy as np
 from sympy import *
 
 
-def matrix(n, m):
-    a = np.random.randint(0, 10, size=n*m).reshape(n, m)
-    print('ma trận a: \n', a)
-    return a
+def matrix(m, n):
+    A = np.random.randint(0, 10, size=n*m).reshape(m, n)
+    #print('ma trận a: \n', A)
+    return A
 
 
-def rank_matran(a):
-    rank_a = np.linalg.matrix_rank(a)
-    print(f'rank = {rank_a}')
-    return rank_a
+def rank_matran(A):
+    rank_A = np.linalg.matrix_rank(A)
+    #print(f'rank = {rank_A}')
+    return rank_A
 
 
-def bac_thang(a):
-    M = Matrix(a)
+def bac_thang(A):
+    M = Matrix(A)
     # Use sympy.rref() method
     M_rref = M.rref()
-    print("The Row echelon form of matrix M and the pivot columns : {}".format(M_rref))
+    #print('Ma trận bậc thang: \n', M_rref)
+    return np.array(M_rref[0])
 
 
 def main():
-    b = matrix(4,5)
-    rank_matran(b)
-    bac_thang(b)
-
+    a = matrix(3,4)
+    r = rank_matran(a)
+    b = bac_thang(a)
+    print(a)
+    print(r)
+    print(b)
 
 if __name__ == '__main__':
      main()
