@@ -28,8 +28,8 @@ def main():
     b = bac_thang(a)
     print(a)
     print(r)
-    print(b)
-
+    print('helo tất cả các bạn. Mình là Minh Trí Hồ')
+    print("Mình sẽ test file này cho các bạn xem")
 
 if __name__ == '__main__':
      main()
