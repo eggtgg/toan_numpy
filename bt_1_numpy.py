@@ -30,5 +30,6 @@ def main():
     print(r)
     print(b)
 
+
 if __name__ == '__main__':
      main()
